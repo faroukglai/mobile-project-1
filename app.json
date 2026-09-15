@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "mobile-project-1",
+    "name": "Avenra",
     "slug": "mobile-project-1",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "mobileproject1",
-    "userInterfaceStyle": "automatic",
+    "scheme": "avenra",
+    "userInterfaceStyle": "light",
     "ios": {
       "icon": "./assets/expo.icon"
     },
@@ -28,7 +28,7 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#FFFFFF",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }

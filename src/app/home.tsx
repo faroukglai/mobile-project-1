@@ -9,13 +9,13 @@ import { type Href, router } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { BottomNav } from '@/components/avenra/bottom-nav';
+import { BottomNav } from '../components/avenra/bottom-nav';
 import {
   BrandHeader,
   InvoiceSummary,
   PaymentStepper,
-} from '@/components/avenra/brand-header';
-import { DashedLine } from '@/components/avenra/dashed-line';
+} from '../components/avenra/brand-header';
+import { DashedLine } from '../components/avenra/dashed-line';
 import {
   AlarmClockIcon,
   ArrowCircleDownIcon,
@@ -27,9 +27,9 @@ import {
   HandHeldIcon,
   MenuDotsIcon,
   ReceiptIcon,
-} from '@/components/avenra/icons';
-import { InnerShadow } from '@/components/avenra/inner-shadow';
-import { Avenra, type } from '@/constants/avenra';
+} from '../components/avenra/icons';
+import { InnerShadow } from '../components/avenra/inner-shadow';
+import { Avenra, type } from '../constants/avenra';
 
 const ACTIVITIES = [
   {

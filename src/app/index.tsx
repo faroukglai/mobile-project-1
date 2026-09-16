@@ -11,9 +11,9 @@ import { type Href, router } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { HelpQuestionIcon } from '@/components/avenra/icons';
-import { InnerShadow } from '@/components/avenra/inner-shadow';
-import { Avenra, type } from '@/constants/avenra';
+import { HelpQuestionIcon } from '../components/avenra/icons';
+import { InnerShadow } from '../components/avenra/inner-shadow';
+import { Avenra, type } from '../constants/avenra';
 
 export default function LoginScreen() {
   const insets = useSafeAreaInsets();

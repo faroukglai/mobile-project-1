@@ -1,10 +1,10 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import type { ReactNode } from 'react';
 
-import { DashedLine } from '@/components/avenra/dashed-line';
-import { PadlockIcon, SnowflakeIcon, UserCircleIcon } from '@/components/avenra/icons';
-import { InnerShadow } from '@/components/avenra/inner-shadow';
-import { Avenra, type } from '@/constants/avenra';
+import { DashedLine } from './dashed-line';
+import { PadlockIcon, SnowflakeIcon, UserCircleIcon } from './icons';
+import { InnerShadow } from './inner-shadow';
+import { Avenra, type } from '../../constants/avenra';
 
 type HeaderRight = 'profile' | ReactNode;
 

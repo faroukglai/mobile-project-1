@@ -4,17 +4,17 @@ import { StatusBar } from 'expo-status-bar';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Line } from 'react-native-svg';
 
-import { BottomNav } from '@/components/avenra/bottom-nav';
-import { BrandHeader } from '@/components/avenra/brand-header';
+import { BottomNav } from '../components/avenra/bottom-nav';
+import { BrandHeader } from '../components/avenra/brand-header';
 import {
   AlarmClockIcon,
   ChevronIcon,
   HelpQuestionIcon,
   MapPinIcon,
   VideoCamIcon,
-} from '@/components/avenra/icons';
-import { InnerShadow } from '@/components/avenra/inner-shadow';
-import { Avenra, type } from '@/constants/avenra';
+} from '../components/avenra/icons';
+import { InnerShadow } from '../components/avenra/inner-shadow';
+import { Avenra, type } from '../constants/avenra';
 
 const WEEK_DAYS = [
   { label: 'Mo', date: '30', hasDot: true },

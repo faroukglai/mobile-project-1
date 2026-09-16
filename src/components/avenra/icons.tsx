@@ -10,7 +10,7 @@ import Svg, {
   SvgXml,
 } from 'react-native-svg';
 
-import { ICON_XML, type IconAssetName } from '@/components/avenra/icon-assets';
+import { ICON_XML, type IconAssetName } from './icon-assets';
 
 type IconProps = {
   size?: number;

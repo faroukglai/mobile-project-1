@@ -3,16 +3,16 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { BottomNav } from '@/components/avenra/bottom-nav';
+import { BottomNav } from '../components/avenra/bottom-nav';
 import {
   BrandHeader,
   InvoiceSummary,
   PaymentStepper,
-} from '@/components/avenra/brand-header';
-import { DashedLine } from '@/components/avenra/dashed-line';
-import { PlusCircleIcon } from '@/components/avenra/icons';
-import { InnerShadow } from '@/components/avenra/inner-shadow';
-import { Avenra, type } from '@/constants/avenra';
+} from '../components/avenra/brand-header';
+import { DashedLine } from '../components/avenra/dashed-line';
+import { PlusCircleIcon } from '../components/avenra/icons';
+import { InnerShadow } from '../components/avenra/inner-shadow';
+import { Avenra, type } from '../constants/avenra';
 
 type InvoiceStatus = 'guaranteed' | 'processing' | 'decline';
 

@@ -3,16 +3,16 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { BottomNav } from '@/components/avenra/bottom-nav';
-import { BrandHeader } from '@/components/avenra/brand-header';
-import { DashedLine } from '@/components/avenra/dashed-line';
+import { BottomNav } from '../components/avenra/bottom-nav';
+import { BrandHeader } from '../components/avenra/brand-header';
+import { DashedLine } from '../components/avenra/dashed-line';
 import {
   CalendarAddIcon,
   CircleClockIcon,
   InfoCircleIcon,
-} from '@/components/avenra/icons';
-import { InnerShadow } from '@/components/avenra/inner-shadow';
-import { Avenra, type } from '@/constants/avenra';
+} from '../components/avenra/icons';
+import { InnerShadow } from '../components/avenra/inner-shadow';
+import { Avenra, type } from '../constants/avenra';
 
 type LeaveStatus = 'pending' | 'review' | 'approved';
 

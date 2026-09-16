@@ -14,7 +14,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { InnerShadow } from '@/components/avenra/inner-shadow';
+import { InnerShadow } from './inner-shadow';
 import {
   ApplicationAddIcon,
   BlankCalendarIcon,
@@ -22,8 +22,8 @@ import {
   HomeNavIcon,
   ReceiptIcon,
   UserCircleIcon,
-} from '@/components/avenra/icons';
-import { Avenra, type } from '@/constants/avenra';
+} from './icons';
+import { Avenra, type } from '../../constants/avenra';
 
 export type NavTab = 'home' | 'invoice' | 'timeoff' | 'tracking' | 'profile';
 

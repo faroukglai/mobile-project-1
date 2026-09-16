@@ -4,9 +4,9 @@ import { Image } from 'expo-image';
 import { StatusBar } from 'expo-status-bar';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { BottomNav } from '@/components/avenra/bottom-nav';
-import { BrandHeader } from '@/components/avenra/brand-header';
-import { DashedLine } from '@/components/avenra/dashed-line';
+import { BottomNav } from '../components/avenra/bottom-nav';
+import { BrandHeader } from '../components/avenra/brand-header';
+import { DashedLine } from '../components/avenra/dashed-line';
 import {
   BellIcon,
   ChatBubblesIcon,
@@ -19,9 +19,9 @@ import {
   MoveLeftIcon,
   PadlockIcon,
   PencilIcon,
-} from '@/components/avenra/icons';
-import { InnerShadow } from '@/components/avenra/inner-shadow';
-import { Avenra, type } from '@/constants/avenra';
+} from '../components/avenra/icons';
+import { InnerShadow } from '../components/avenra/inner-shadow';
+import { Avenra, type } from '../constants/avenra';
 
 type RowControl = { kind: 'toggle'; value: boolean; onChange: (v: boolean) => void } | { kind: 'chevron' };
 

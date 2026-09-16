@@ -13,9 +13,9 @@ import {
   NewFileIcon,
   ReviewStarFolderIcon,
   UsersGroupIcon,
-} from '@/components/avenra/icons';
-import { InnerShadow } from '@/components/avenra/inner-shadow';
-import { Avenra, type } from '@/constants/avenra';
+} from '../components/avenra/icons';
+import { InnerShadow } from '../components/avenra/inner-shadow';
+import { Avenra, type } from '../constants/avenra';
 
 const MENU = [
   {

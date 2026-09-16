@@ -99,10 +99,7 @@ export default function HomeScreen() {
 
       <ScrollView
         style={styles.scroll}
-        contentContainerStyle={[
-          styles.scrollContent,
-          { paddingBottom: 110 + insets.bottom },
-        ]}
+        contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
         bounces={false}>
         <BrandHeader topInset={insets.top}>
@@ -134,7 +131,7 @@ export default function HomeScreen() {
           ))}
         </ScrollView>
 
-        <View style={styles.bottomSheet}>
+        <View style={[styles.bottomSheet, { paddingBottom: 110 + insets.bottom }]}>
           <View style={styles.handle} />
 
           <View style={styles.sheetBody}>
@@ -237,6 +234,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   scrollContent: {
+    flexGrow: 1,
     gap: 16,
   },
   quickActionsScroll: {
@@ -274,6 +272,7 @@ const styles = StyleSheet.create({
     color: Avenra.white,
   },
   bottomSheet: {
+    flexGrow: 1,
     backgroundColor: Avenra.white,
     borderTopLeftRadius: 26,
     borderTopRightRadius: 26,

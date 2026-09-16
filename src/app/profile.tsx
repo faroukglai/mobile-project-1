@@ -84,10 +84,7 @@ export default function ProfileScreen() {
 
       <ScrollView
         style={styles.scroll}
-        contentContainerStyle={[
-          styles.scrollContent,
-          { paddingBottom: 110 + insets.bottom },
-        ]}
+        contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
         bounces={false}>
         <BrandHeader
@@ -120,7 +117,7 @@ export default function ProfileScreen() {
           </View>
         </BrandHeader>
 
-        <View style={styles.bottomSheet}>
+        <View style={[styles.bottomSheet, { paddingBottom: 110 + insets.bottom }]}>
           <View style={styles.handle} />
 
           <View style={styles.sectionHeader}>
@@ -193,6 +190,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   scrollContent: {
+    flexGrow: 1,
     gap: 16,
   },
   switchBtn: {
@@ -247,6 +245,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   bottomSheet: {
+    flexGrow: 1,
     backgroundColor: Avenra.white,
     borderTopLeftRadius: 26,
     borderTopRightRadius: 26,

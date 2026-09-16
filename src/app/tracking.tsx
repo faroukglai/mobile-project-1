@@ -60,10 +60,7 @@ export default function TrackingScreen() {
 
       <ScrollView
         style={styles.scroll}
-        contentContainerStyle={[
-          styles.scrollContent,
-          { paddingBottom: 110 + insets.bottom },
-        ]}
+        contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
         bounces={false}>
         <BrandHeader
@@ -143,7 +140,7 @@ export default function TrackingScreen() {
           </Pressable>
         </View>
 
-        <View style={styles.bottomSheet}>
+        <View style={[styles.bottomSheet, { paddingBottom: 110 + insets.bottom }]}>
           <View style={styles.handle} />
           <View style={styles.dayTotalRow}>
             <Text style={styles.dayTotal}>
@@ -243,6 +240,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   scrollContent: {
+    flexGrow: 1,
     gap: 16,
   },
   helpBtn: {
@@ -372,6 +370,7 @@ const styles = StyleSheet.create({
     ...type.bodyLargeSemibold,
   },
   bottomSheet: {
+    flexGrow: 1,
     backgroundColor: Avenra.white,
     borderTopLeftRadius: 26,
     borderTopRightRadius: 26,

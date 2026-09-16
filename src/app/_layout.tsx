@@ -10,7 +10,12 @@ export default function RootLayout() {
   }, []);
 
   return (
-    <Stack screenOptions={{ headerShown: false, animation: 'fade' }}>
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        animation: 'fade',
+        contentStyle: { backgroundColor: '#0D0D12' },
+      }}>
       <Stack.Screen name="index" />
       <Stack.Screen name="home" />
       <Stack.Screen name="invoice" />

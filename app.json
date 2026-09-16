@@ -1,14 +1,18 @@
 {
   "expo": {
     "name": "Avenra",
-    "slug": "mobile-project-1",
+    "slug": "growthfusion-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "avenra",
     "userInterfaceStyle": "light",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "bundleIdentifier": "com.faroukglai.avenra",
+      "icon": "./assets/expo.icon",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -37,6 +41,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "42f7e4f4-19d5-4d5e-bc8e-17fd8f5afe06"
+      }
+    },
+    "owner": "farouk_glai"
   }
 }
